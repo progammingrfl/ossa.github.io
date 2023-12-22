@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: changeBackground 6s infinite;
+  }
+
+  @keyframes changeBackground {
+    0% {
+        background-color: rgb(211, 123, 123);
+    }
+    10% {
+        background-color: rgb(85, 230, 230);
+    }
+    20% {
+        background-color: rgb(151, 158, 214);
+    }
+    30% {
+        background-color: rgb(223, 214, 136);
+    }
+    40% {
+        background-color: rgb(202, 221, 149);
+    }
+    50% {
+        background-color: rgb(235, 235, 198);
+    }
+    60% {
+        background-color: rgb(209, 174, 238);
+    }
+    70% {
+        background-color: rgb(108, 189, 164);
+    }
+    80% {
+        background-color: rgb(201, 231, 144);
+    }
+    90% {
+        background-color: rgb(166, 155, 226);
+    }
+    100% {
+        background-color: rgb(140, 183, 240);
+    }
+  }  
+  
+  .container {
+    position: relative;
+  }
+  
+  .photo {
+    width: 400px;
+    height: 400px;
+    background-image: url('https://github.githubassets.com/images/modules/site/home-campaign/astrocat.png'); /* Ganti dengan URL foto yang diinginkan */
+    background-size: cover;
+    border-radius: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: movePhoto 10s infinite alternate; /* Animasi bergerak selama 5 detik */
+  }
+  
+  @keyframes movePhoto {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  .tata-surya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-color: #222;
+  }
+
+  .sun {
+    width: 10%;
+    padding-top: 10%;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 1450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotateSun 10s linear infinite;
+  }
+  
+
+  .planet {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 200px;
+  }
+
+  .planet.mercury {
+    background-color: #b6b6b6;
+    animation-name: rotateMercury;
+    animation-duration: 2s;
+  }
+
+  .planet.venus {
+    background-color: #ffaa00;
+    animation-name: rotateVenus;
+    animation-duration: 4s;
+  }
+
+  .planet.earth {
+    background-color: #2196f3;
+    animation-name: rotateEarth;
+    animation-duration: 6s;
+  }
+
+  .planet.mars {
+    background-color: #ff5733;
+    animation-name: rotateMars;
+    animation-duration: 8s;
+  }
+
+  /* Keyframes untuk rotasi setiap planet */
+  @keyframes rotateSun {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotateMercury {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotateVenus {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotateEarth {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotateMars {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

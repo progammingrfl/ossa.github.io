@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bendera {
+    display: flex;
+    background-color: #9b9a9aab;
+    padding: 10px;
+    margin: 100px;
+    height: 700px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 8px;
+}
+
+.bendera img {
+    width: 400px;
+    margin-top: 100px;
+}
+
+.bendera-id {
+    width: 300px;
+}
+
+.bendera .flag-2 {
+    margin-bottom: 30px;
+}
+
+.tiang {
+    position: fixed;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+.flag-2 img {
+    animation: naik 30s infinite;
+    padding-left: 80px;
+    float: left;
+    margin-left: 143px;
+    width: 300px;
+}
+
+@keyframes naik {
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(-350px);
+    }
+}

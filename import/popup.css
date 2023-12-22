@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+}
+
+.popup {
+    background-color: #fff;
+    font-family: 'Monaco', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    top: 0;
+    position: absolute;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    animation: slide 5s infinite alternate;
+}
+  
+  @keyframes slide {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: #0078D7;
+    color: #000000;
+    border: 1px solid rgb(0, 55, 175);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005FAB;
+  }

@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    width: 0;
+    height: 0;
+}
+
+.download-undawn {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.download-undawn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078D7;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.download-undawn a:hover {
+    background-color: #005fab;
+}
+
+.download-undawn i {
+    font-size: 50px;
+    padding-right: 15px;
+}

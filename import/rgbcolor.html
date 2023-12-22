@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RGB Slider</title>
+        <link rel="stylesheet" type="text/css" href="rgbcolor.css">
+        <link href="https://fonts.cdnfonts.com/css/justcolescursive" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title-font">
+            <h1>Choose Color:</h1>
+            <div class="slider-container">
+                <label for="red">Red:</label>
+                <input type="range" id="red" min="0" max="255" value="0">
+                <span id="red-value">0</span>
+                
+                <label for="green">Green:</label>
+                <input type="range" id="green" min="0" max="255" value="0">
+                <span id="green-value">0</span>
+                
+                <label for="blue">Blue:</label>
+                <input type="range" id="blue" min="0" max="255" value="0">
+                <span id="blue-value">0</span>
+            </div>
+        </div>
+    
+        <div class="color-box" id="color-box"></div>
+    
+        <script src="rgbcolor.js"></script>
+    </body>
+</html>

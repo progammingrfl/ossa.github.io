@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s;
+    height: 0;
+}
+
+body.siang {
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: right;
+}
+
+body.malam {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: right;
+}
+
+.toggle {
+    width: 60px;
+    height: 30px;
+    background-color: #d8d8d8;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.toggle-ball {
+    width: 30px;
+    height: 30px;
+    background-color: #00308a;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: left 0.6s;
+}
+
+body.malam .toggle-ball {
+    left: 31px;
+}
